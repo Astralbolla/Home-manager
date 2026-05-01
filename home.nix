@@ -1,4 +1,4 @@
-{ lib, config, pkgs, ... }:
+{ lib, config, pkgs, caelestia-shell, ... }:
 
 with lib.hm.gvariant;
 
@@ -6,6 +6,8 @@ with lib.hm.gvariant;
   home.username = "gleb";
   home.homeDirectory = "/home/gleb";
   home.stateVersion = "25.11";
+
+
 
   dconf.settings = {
     "net/launchpad/plank/docks/dock1" = {
